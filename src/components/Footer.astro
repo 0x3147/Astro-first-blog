@@ -1,0 +1,23 @@
+---
+import Social from './Social.astro'
+const platform = 'github'
+const username = '0x3147'
+---
+
+<footer>
+  <p>
+    Learn more about my projects on 
+    <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!
+  </p>
+  <Social platform='wechat' username='Radeon' />
+  <Social platform='qq' username='xxxx' />
+  <Social platform='bilibili' username='xxxxx' />
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
